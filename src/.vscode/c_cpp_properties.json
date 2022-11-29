@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "name": "EE (Open Source SDK)",
+            "compilerPath": "/usr/local/ps2dev/ee/bin/mips64r5900el-ps2-elf-gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${PS2SDK}/common/include/**",
+                "${PS2SDK}/ee/include/**",
+                "${PS2SDK}/ports/include/**",
+                "${PS2SDK}/ports/include/SDL/**",
+                "${PS2DEV}/ee/include/**",
+                "${PS2DEV}/ee/lib/gcc/mips64r5900el-ps2-elf/11.3.0/include/**",
+                "${GSKIT}/include/**"
+            ],
+            "defines": [
+                "_EE"
+            ],
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        },
+        {
+            "name": "IOP (Open Source SDK)",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${PS2SDK}/common/include/**",
+                "${PS2SDK}/iop/include/**",
+                "${PS2DEV}/iop/include/**",
+                "${PS2DEV}/iop/lib/gcc-lib/iop/3.2.3/include/**",
+                "${PS2DEV}/iop/iop/sys-include/**"
+            ],
+            "defines": [
+                "_IOP"
+            ],
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++20",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
