@@ -38,6 +38,7 @@
 #include <string.h>
 #include <malloc.h>
 #include <kernel.h>
+#include <d_main.h>
 
 
 //
@@ -46,11 +47,11 @@
 // calls all startup code, parses command line options.
 //
 
-void D_DoomMain (void);
+//void D_DoomMain (void);
 
-void M_FindResponseFile(void);
+//void M_FindResponseFile(void);
 
-void dg_Create();
+//void dg_Create();
 
 static void reset_IOP() {
 	SifInitRpc(0);

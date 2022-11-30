@@ -34,21 +34,21 @@
 
 static const iwad_t iwads[] =
 {
-    { "res/doom2.wad",    doom2,     commercial, "Doom II" },
-    { "res/plutonia.wad", pack_plut, commercial, "Final Doom: Plutonia Experiment" },
-    { "res/tnt.wad",      pack_tnt,  commercial, "Final Doom: TNT: Evilution" },
-    { "res/doom.wad",     doom,      retail,     "Doom" },
-    { "res/doom1.WAD",    doom,      shareware,  "Doom Shareware" },
-    { "res/chex.wad",     pack_chex, shareware,  "Chex Quest" },
-    { "res/hacx.wad",     pack_hacx, commercial, "Hacx" },
-    { "res/freedm.wad",   doom2,     commercial, "FreeDM" },
-    { "res/freedoom2.wad", doom2,    commercial, "Freedoom: Phase 2" },
-    { "res/freedoom1.wad", doom,     retail,     "Freedoom: Phase 1" },
-    { "res/heretic.wad",  heretic,   retail,     "Heretic" },
-    { "res/heretic1.wad", heretic,   shareware,  "Heretic Shareware" },
-    { "res/hexen.wad",    hexen,     commercial, "Hexen" },
+    { "doom2.wad",    doom2,     commercial, "Doom II" },
+    { "plutonia.wad", pack_plut, commercial, "Final Doom: Plutonia Experiment" },
+    { "tnt.wad",      pack_tnt,  commercial, "Final Doom: TNT: Evilution" },
+    { "doom.wad",     doom,      retail,     "Doom" },
+    { "doom1.WAD",    doom,      shareware,  "Doom Shareware" },
+    { "chex.wad",     pack_chex, shareware,  "Chex Quest" },
+    { "hacx.wad",     pack_hacx, commercial, "Hacx" },
+    { "freedm.wad",   doom2,     commercial, "FreeDM" },
+    { "freedoom2.wad", doom2,    commercial, "Freedoom: Phase 2" },
+    { "freedoom1.wad", doom,     retail,     "Freedoom: Phase 1" },
+    { "heretic.wad",  heretic,   retail,     "Heretic" },
+    { "heretic1.wad", heretic,   shareware,  "Heretic Shareware" },
+    { "hexen.wad",    hexen,     commercial, "Hexen" },
     //{ "strife0.wad",  strife,    commercial, "Strife" }, // haleyjd: STRIFE-FIXME
-    { "res/strife1.wad",  strife,    commercial, "Strife" },
+    { "strife1.wad",  strife,    commercial, "Strife" },
 };
 
 // Array of locations to search for IWAD files
