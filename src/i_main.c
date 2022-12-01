@@ -25,14 +25,13 @@
 #include "m_argv.h"
 
 #include <ps2_all_drivers.h>
-#include <tamtypes.h>
+
+#include <ps2_printf.h>
 
 #include <iopcontrol.h>
 #include <sifrpc.h>
 #include <sbv_patches.h>
 
-#include <debug.h>
-#include <stdio.h>
 #include <stdbool.h>
 #include <loadfile.h>
 #include <string.h>
@@ -80,15 +79,13 @@ static void init_drivers()
 
 int main(int argc, char **argv)
 {
-    printf("\r\nreboot IOP");
+    ps2_printf("\r\nreboot IOP", 5);
     reset_IOP();
 
-    printf("\r\ninit drivers");
+    ps2_printf("\r\ninit drivers", 5);
     init_drivers();
 
-    printf("init_scr();");
-    init_scr();
-    scr_printf("init_scr(); done");
+    ps2_printf("Init screen() DONE\n", 5);
     
     // save arguments
     
@@ -98,18 +95,11 @@ int main(int argc, char **argv)
     M_FindResponseFile();
 
     // start doom
-    scr_printf("\r\nStarting D_DoomMain\r\n");
+    ps2_printf("\r\nStarting D_DoomMain\r\n", 5);
     
 	dg_Create();
 
-    while (true)
-    {
-        scr_printf("D_DoomMain(); runs here...");
-        printf("D_DoomMain(); runs here...");
-        D_DoomMain ();
-    }
-        
-
-    
+    ps2_printf("D_DoomMain(); runs here...", 5);
+    D_DoomMain();
 }
 

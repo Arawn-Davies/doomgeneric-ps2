@@ -267,11 +267,11 @@ void D_CheckNetGame (void)
         if (timelimit == 20 && M_CheckParm("-avg"))
         {
             DEH_printf("Austin Virtual Gaming: Levels will end "
-                           "after 20 minutes\n");
+                           "after 20 minutes\n", 4);
         }
         else
         {
-            DEH_printf("Levels will end after %d minute", timelimit);
+            DEH_printf("Levels will end after %d minute", 4, timelimit);
             if (timelimit > 1)
                 printf("s");
             printf(".\n");

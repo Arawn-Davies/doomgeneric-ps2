@@ -19,7 +19,7 @@ EE_LDFLAGS += -L$(PS2SDK)/ports/lib -L$(PS2DEV)/gsKit/lib -L$(PS2DEV)/
 
 #EE_CFLAGS+=-ggdb3 -Wall -DNORMALUNIX -DLINUX -DSNDSERV -D_DEFAULT_SOURCE # -DUSEASM
 EE_INCS += -I$(PS2SDK)/ports/include/SDL2 -I$(PS2SDK)/ports/include -I./includes
-EE_LIBS += -lSDL2main -lSDL2 -lpatches -lgskit -ldmakit -lps2_drivers -lm -lc -ldebug
+EE_LIBS += -lSDL2main -lSDL2 -lpatches -lgskit -ldmakit -lps2_drivers -lm -lc -lps2_printf -ldebug
 
 # subdirectory for objects
 OBJDIR = ./obj
